@@ -831,8 +831,14 @@
 </head>
 
 <body class="antialiased">
-    <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-        <h1>This is my first Laravel project - TodoList</h1>
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+
+
+        <h1>This is my first Laravel project - TodoList</h1><br>
+
+        <label for="listItem">New Todo Item</label>
+        <input type="text" name="listItem">
+
     </div>
 </body>
 
