@@ -710,9 +710,12 @@
         <div style="color: white;">
             <h1>Todo List</h1><br>
 
-            <label for="listItem">New Todo Item</label><br>
-            <input type="text" name="listItem"><br>
-            <button>Save item</button>
+            <form method="post" action="{{ route('saveItem') }}" accept-charset="UTF-8">
+                {{ csrf_field() }}
+                <label for="listItem">New Todo Item</label><br>
+                <input type="text" name="listItem" style="color: blue;"><br>
+                <button>Save item</button>
+            </form>
         </div>
     </div>
 </body>
